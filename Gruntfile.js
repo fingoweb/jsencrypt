@@ -34,6 +34,7 @@ module.exports = function(grunt) {
   var suffix = 'exports.JSEncrypt = JSEncrypt;' + "\n";
   suffix += '})(JSEncryptExports);' + "\n";
   suffix += 'var JSEncrypt = JSEncryptExports.JSEncrypt;' + "\n";
+  suffix += 'module.exports = JSEncrypt;' + "\n";
 
   // Project configuration.
   grunt.initConfig({
